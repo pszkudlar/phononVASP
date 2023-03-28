@@ -1,6 +1,6 @@
-import os
+ import os
 
-folderek = input("Podaj ściezkę do folderu, w którym znajdują się fodlery z kolejnymi singlepointami: \n")
+folderek = input("Tell me a directory contaibning all the folders with vasprun.xml files: \n")
 command = "phonopy -f "
 for i in os.listdir(folderek):
     con = os.path.join(folderek, i)
