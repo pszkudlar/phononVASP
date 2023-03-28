@@ -11,4 +11,4 @@ for i in os.listdir(curdir):
 		os.mkdir(new_fol)
 		new_path = os.path.join(new_fol, "POSCAR")
 		shutil.copyfile(old_path, new_path)
-print("Pamietaj by zmienic kp, ladunek, ibr, nsw!!!!")
+print("Remember to make all necessery changes in the input files!")
