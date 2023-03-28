@@ -23,6 +23,6 @@ for i in folders:
 		if "</modeling>" in vasprun_lines[-1]:
 			shutil.copyfile(old_path, new_path)
 		else:
-			print("W {} jest problem.".format(old_path))
+			print("Calculation wasn't finnished yet in {}.".format(old_path))
 	except:
-		print("Cos nie pyklo w {}".format(old_path))
+		print("I can't open vaprun.xml file in {}".format(old_path))
